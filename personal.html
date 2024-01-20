@@ -1,0 +1,154 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+ <?php
+ if ($_SERVER["REQUEST_METHOD"] == "POST") {
+ $name = $_POST["name"];
+ $email = $_POST["email"];
+ $message = $_POST["message"];
+ 
+ // Example: Send email (you may want to use a dedicated library for this)
+ mail("jafolayan98@gmail.com", "Website Contact Form", "From: $name\nEmail: $email\nMessage: $message");
+ 
+ // Redirect after submission (you can customize this URL)
+ header("Location: thank-you.html");
+ exit();
+ }
+ ?>
+ <meta charset="UTF-8">
+ <meta name="keywords" content=evepent,order " />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Demmy Jay - Website Developer</title>
+ <style>
+ body {
+ font-family: 'Arial', sans-serif;
+ background-color: red;
+ color: #333;
+ margin: 0;
+ padding: 0;
+ }
+ 
+ header {
+ background-color: pink;
+ color: #fff;
+ padding:auto1rem;
+ text-align: center;
+ }
+ 
+ nav {
+ display: flex;
+ justify-content: space-around;
+ list-style-type: none;
+ padding: 50px;
+ margin: 6px;
+ }
+ 
+ nav a {
+ text-decoration: none;
+ color: green;
+ size:50px;
+ }
+ 
+ section {
+ padding: 2rem;
+ }
+ 
+ h1, h2 {
+ color: #333;
+ }
+ #portfolio{
+ background-color:aquamarine;
+ }
+ #about{
+ background-color:green;
+ }
+ #contact {
+ background-color: blue;
+ }
+ 
+ footer {
+ background-color: #333;
+ color: #fff;
+ padding: 1rem;
+ text-align: center;
+ {}
+ 
+ 
+ 
+ 
+ 
+
+ </style>
+ </head>
+ <body>:<script>
+ // Example JavaScript for smooth scrolling
+ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+ anchor.addEventListener('click', function (e) {
+ e.preventDefault();
+ 
+ document.querySelector(this.getAttribute('href')).scrollIntoView({
+ behavior: 'smooth'
+ });
+ });
+ });
+ </script>
+ 
+ <!-- Header -->
+ <header><!-- <img src="/storage/emulated/0/Xender/image/snapchat-1805960001.jpg
+ ">-->
+ <nav>
+ <ul>
+ <li><a href="#home">Home</a></li>
+ <li><a href="#portfolio">Portfolio</a></li>
+ <li><a href="#services">Services</a></li>
+ <li><a href="#about">About Me</a></li>
+ <li><a href="#contact">Contact</a></li>
+ </ul>
+ </nav>
+ </header>
+ 
+ <!-- Hero Section -->
+ <section id="home">
+ <h1>Welcome to Demmy Jay's Website</h1>
+ <p>Your destination for creative website design.</p>
+ </section>
+ 
+ 
+ <!-- Portfolio Section -->
+ <section id="portfolio">
+ <h2>Portfolio</h2>
+ <!-- Showcase your projects here -->
+ </section>
+ 
+ <!-- Services Section -->
+ <section id="services">
+ <h2>Services</h2>
+ <!-- Describe your services here -->
+ <a href="#contact">Request a Quote</a>
+ </section>
+ 
+ <!-- About Me Section -->
+ <section id="about">
+ <br>
+ <h2>About Me</h2>
+ <!-- Share information about yourself here -->
+ 
+ </section>
+ 
+ <!-- Contact Section -->
+ <section id="contact">
+ <h2>Contact</h2>
+ <!-- Add a contact form and social media links here -->
+ <p>Email: jafolayan98@gmail.com</p>
+ <p>Facebook: <a href="your_facebook_link">Demmy Jay</a></p>
+ </section>
+ 
+ <!-- Footer -->
+ <footer>
+ <p>&copy; 2024 Demmy Jay. All rights reserved.</p>
+ <p><a href="#terms">Terms of Service</a> | <a href="#privacy">Privacy Policy</a></p>
+ </footer>
+ 
+ </body>
+ </html>
+ 
