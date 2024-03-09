@@ -1,20 +1,6 @@
  <!DOCTYPE html>
  <html lang="en">
  <head>
- <?php
- if ($_SERVER["REQUEST_METHOD"] == "POST") {
- $name = $_POST["name"];
- $email = $_POST["email"];
- $message = $_POST["message"];
- 
- // Example: Send email (you may want to use a dedicated library for this)
- mail("jafolayan98@gmail.com", "Website Contact Form", "From: $name\nEmail: $email\nMessage: $message");
- 
- // Redirect after submission (you can customize this URL)
- header("Location: thank-you.html");
- exit();
- }
- ?>
  <meta charset="UTF-8">
  <meta name="keywords" content=evepent,order " />
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -146,4 +132,3 @@
  
  </body>
  </html>
- 
